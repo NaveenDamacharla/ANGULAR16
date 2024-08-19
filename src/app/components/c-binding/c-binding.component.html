@@ -1,0 +1,13 @@
+<p>c-binding works!</p>
+
+<p [class]="myText">class Binding</p>
+
+<p [class]="myGroup">class Binding with group</p>
+
+<!-- multiple classes wants to apply -->
+<p [ngClass]="myGroup">class Binding with group with ngClass</p>
+
+ <p [class] ="isRequired? 'textcolor' : 'textsize'" >Class binding with ternary operator</p>
+
+
+<p [class.textsize] ="isRequired">Class binding with . operator</p>

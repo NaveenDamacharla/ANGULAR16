@@ -1,0 +1,10 @@
+<p>s-binding works!</p>
+<h3 [style.color]="myColor">Style binding </h3>
+
+<!-- if want to give directly -->
+<h3 [style.color]="'red'">Style binding </h3>
+<h3 [style.fontStyle]="'italic'">Style binding </h3>
+
+<h3 [style.fontSize]="isRequired? '70px' : '50px'">Style binding </h3>
+
+<h3 [ngStyle]="myStyleGroup">Group of styles</h3>

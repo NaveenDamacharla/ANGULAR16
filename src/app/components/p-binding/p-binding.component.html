@@ -1,0 +1,12 @@
+<p>p-binding works!</p>
+<input type="text" value="Naveen" id="naveen">
+<!-- boolian values can not assign in property binding -->
+<input type="text" value={{name}} id={{id}}>
+
+<!-- pbinding -->
+<input type="text" [value]="name" [id]="id">
+<hr>
+
+<input type="text" [value]="name" [id]="id" disabled>
+<!-- pbinding -->
+<input type="text" [value]="name" [id]="id" [disabled]="isDisabled">

@@ -1,0 +1,23 @@
+<h1><u>Two-way data binding</u></h1>
+<input type="text" #firstname>
+<input type="text" #middlename>
+<input type="text" #lastname>
+
+<!-- <button mat-button color="primary">my name</button>
+<button mat-flat-button color="primary">my name</button> -->
+<br>
+<button mat-raised-button color="primary" (click)="onClick(firstname.value)">my firstname</button>
+
+<button mat-raised-button color="primary" (click)="onClick1(middlename.value)">my middlename</button>
+
+<button mat-raised-button color="primary" (click)="onClick2(lastname.value)">my lastname</button>
+<br>
+
+<h2>{{"my firstname:"+ myFirstname }}</h2>
+<h2>{{"my middlename:"+ myMiddlename }}</h2>
+<h2>{{"my lastname:"+ myLastname }}</h2>
+
+<hr>
+
+<input type="text" [(ngModel)]="myText">
+<h2>{{'My name is:'+myText}}</h2>
